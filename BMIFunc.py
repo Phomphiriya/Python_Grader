@@ -1,7 +1,6 @@
 from multiprocessing.connection import answer_challenge
 from turtle import circle
 
-
 class BMI:
     def __init__ (self ,height = None ,weight = None):
         if height == None:
