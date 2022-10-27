@@ -1,28 +1,25 @@
 import datetime
-from typing import List
 
-def date_to_ms(data: str):
-    date_split = data.split("-")
-    newDate = datetime.datetime(int(date_split[0]), int(date_split[1]), int(date_split[2]))
+def date_to_ms(data):
+    data_split = data.split("-")
+    newDate = datetime.datetime(int(data_split[0]),int(data_split[1]), int(data_split[2]))
     return newDate.timestamp()
-
 
 def sort_by_rank(data):
     str_ans = ""
-    workingLis = sorted(data,key=lambda l:l[2], reverse=True)
-    for i in workingLis:
-        str_ans += " ".join(map(str, i))
+    lis = sorted(data, key=lambda l:l[2], reverse=True)
+    for i in lis:
+        str_ans += "".join(map(str, i))
         str_ans += "\n"
-    return(str_ans)
-
+    return str_ans
 
 def sort_by_date(date):
     str_ans = ""
-    workingLis = sorted(date,key=lambda l:l[5], reverse=True)
-    for i in workingLis:
-        str_ans += " ".join(map(str, i[:][:-1]))
+    lis = sorted(data, key=lambda l:l[5], reverse=True)
+    for i in lis:
+        str_ans += "".join(map(str, i[:][:-1]))
         str_ans += "\n"
-    return(str_ans)
+    return str_ans
 
 lis_all = []
 lis_all_type = []
@@ -44,3 +41,4 @@ with open("df.txt","r") as file:
     for i in range(len(lis_all_type)):
         lis_all_type[i].append(date_to_ms(lis_all_type[i][0]))
     print(sort_by_date(lis_all_type))
+
