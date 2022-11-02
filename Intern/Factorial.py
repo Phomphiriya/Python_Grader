@@ -6,4 +6,4 @@ def factorial(n):
 
 if __name__ == '__main__':
     inp = int(input("Enter input : "))
-    print(factorial(inp))  
+    print(factorial(inp)) 
