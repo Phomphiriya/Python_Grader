@@ -1,4 +1,2 @@
-This repo is a basic python tutorial for special classes.
-\n
-A python basic and data structure training for junior student.
-I'm a totor! xD
+<h1>This repo is a basic python tutorial for special classes.<\h1>
+<h2>A python basic and data structure training for junior student.<\h2>
