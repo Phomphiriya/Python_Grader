@@ -12,15 +12,17 @@ c = [[1,2,3],4,5,6] ## List 2D
 # print(c[0][0])
 # b[0] = 4 ## สามารถเปลี่ยนแปลงได้
 # print(b[0])
-print(a)
-a.append("easy") ## เพิ่มค่าเข้าไปด้านหลัง
-print(a)
-a.insert(1,"makmak") ## แทรกค่าไปตำแหน่งนั้นๆ
-print(a)
-a.remove(2.2) ## เอาคำนั้นๆออก
-print(a)
-a.pop(1) ## เอาค่าตำแหน่งนั้นๆออก
-print(a)
+# print(a)
+# a.append("easy") ## เพิ่มค่าเข้าไปด้านหลัง
+# print(a)
+# a.insert(1,"makmak") ## แทรกค่าไปตำแหน่งนั้นๆ
+# print(a)
+# a.remove(2.2) ## เอาคำนั้นๆออก
+# print(a)
+# a.pop(1) ## เอาค่าตำแหน่งนั้นๆออก
+# print(a)
+# a.reverse()
+# print(a)
 
 ## Tuple
 t = (5, "program", 1.5)
@@ -34,3 +36,4 @@ se = {1,2,2,3,3,3,3,3,3,4,5} ## เลขเดียวกันจะถือ
 ## Dictionary
 d = { "brand": "Ford", "model": "mustang","year": 1964, "color": ["red", "white"] }
 # print(d["color"])
+
