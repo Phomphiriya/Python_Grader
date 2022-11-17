@@ -4,7 +4,7 @@
 # ## Input: corn it is a corn,corn
 # ## Output: CORN it is a CORN
 
-inp = input("Input : ").split(",")
+inp = input("Input : ").split(",") # hi my name is boom   boom
 text = inp[0]
 highlight = inp[1]
 ans = ""

@@ -12,8 +12,8 @@
 # output = 1-670-81162-X
 
 inp = input("input = ")
-ans = inp[0:-2]
-temp = ans.replace("-","")
+check_ans = inp[0:-2]
+temp = check_ans.replace("-","")
 count = 1
 sum = 0
 # print(temp)
@@ -28,11 +28,11 @@ for i in range(len(temp)):
 
 print("output = ",end="")
 if sum % 11 == 10:
-    print(ans+"-X")
+    print(check_ans+"-X")
 else:
     check = sum % 11
-    check_ans = str(ans)+"-"+str(check)
-    if check_ans == inp:
+    ans = str(check_ans)+"-"+str(check)
+    if ans == inp:
         print("right")
     else:
-        print(check_ans)
+        print(ans)
