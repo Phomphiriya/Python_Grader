@@ -26,3 +26,30 @@
 
 # Input: 20,40,False
 # Output: ราคา 24
+
+inp = input("Enter input : ").split(",")
+age = int(inp[0])
+km = int(inp[1])
+air = str(inp[2])
+price = 0
+
+if air == "True":
+    if km >= 30 and km <= 45:
+        price = 35
+    elif km >= 16 and km <= 30:
+        price = 30
+    elif km >= 15:
+        price = 15
+elif air == "False":
+    if km >= 30 and km <= 45:
+        price = 24
+    elif km >= 16 and km <= 30:
+        price = 16
+    elif km >= 15:
+        price = 8
+if age <= 15:
+    price -= 5
+elif age > 60:
+    price -= 2
+
+print(price)
