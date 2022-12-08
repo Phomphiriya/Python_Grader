@@ -4,7 +4,8 @@ def eiei(num1,num2):
 
 inp1 = int(input("enter1 : "))
 inp2 = int(input("enter2 : "))
-print(eiei(inp1,inp2))
+ans_eiei = eiei(inp1,inp2)
+print(ans_eiei)
 
 
 # x = "xyz"
