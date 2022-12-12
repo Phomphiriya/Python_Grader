@@ -8,10 +8,10 @@ def find_ans(x):
     ans = 0
     for i in range(1,x+1):
         if i % 2 == 0:
-            ans -= round(1/(i*i+1),6)
+            ans -= 1/(i*(i+1))
         else:
-            ans += round(1/(i*i+1),6)
-    return ans
+            ans += 1/(i*(i+1))
+    return round(ans,6)
 
 inp = input("Enter N : ")
 print(find_ans(int(inp)))
