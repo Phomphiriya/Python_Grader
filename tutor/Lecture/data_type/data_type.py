@@ -41,7 +41,7 @@ c = [[1,2,3],4,5,6] ## List 2D
 # print(a)
 # print(sorted(b, reverse=True)) #reverse=True จะเปลี่ยนเป็นมากไปน้อย
 
-## Tuple
+# # Tuple
 # t = (5, "program", 1.5)
 # t[0] = 1 ## ไม่สามารถเปลี่ยนแปลงได้
 # print(t[0])
@@ -50,7 +50,21 @@ c = [[1,2,3],4,5,6] ## List 2D
 # se = {1,2,2,3,3,3,3,3,3,4,5} ## เลขเดียวกันจะถือว่าเป็นเลขตัวเดียวกัน
 # print(set)
 
-## Dictionary
-# d = { "brand": "Ford", "model": "mustang","year": 1964, "color": ["red", "white"] }
+# Dictionary
+d = { "brand": "Ford", "model": "mustang","year": 1964, "color": ["red", "white"] }
 # print(d["color"])
+# print(d.values())
+# print(d.keys())
+# print(d.items())
 
+# d["wheel"] = "4" ## add items
+# print(d.items())
+# d.update({"year": 2002}) ## change the value
+# print(d.items())
+# d.pop("model")
+# print(d)
+# d.popitem()
+# print(d)
+
+# for i,k in d.items():
+#     print("{} : {}".format(i,k))
